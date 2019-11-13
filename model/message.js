@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 var msgSchema = new mongoose.Schema({
+   
     source: {
        type: String,
        required: 'source can\'t be empty'
