@@ -15,7 +15,9 @@ const mongoose =require('mongoose');
 //Database Connection
 mongoose.connect(process.env.DB_CONNECTION,
     { useNewUrlParser: true,
-    useUnifiedTopology: true 
+    useUnifiedTopology: true ,
+      useCreateIndex: true,
+  useNewUrlParser: true
    })
 .then (
    ()=>{console.log('Database Connected Successfully')}
